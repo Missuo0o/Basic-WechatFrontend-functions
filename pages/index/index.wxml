@@ -209,9 +209,9 @@
     <view data-event-opts="{{[['tap',[['e3',['$event']]]]]}}" hidden="{{!(openOrderCartList)}}" class="pop_mask  data-v-57280228" bindtap="__e">
       <view data-event-opts="{{[['tap',[['e4',['$event']]]]]}}" class="cart_pop data-v-57280228" catchtap="__e">
         <view class="top_title data-v-57280228">
-          <view class="tit data-v-57280228">购物车</view>
+          <view class="tit data-v-57280228">Shopping Cart</view>
           <view data-event-opts="{{[['tap',[['clearCardOrder']]]]}}" class="clear data-v-57280228" catchtap="__e">
-            <image class="clear_icon data-v-57280228" src="../../static/clear.png" mode></image><text class="clear-des data-v-57280228">清空</text>
+            <image class="clear_icon data-v-57280228" src="../../static/clear.png" mode></image><text class="clear-des data-v-57280228">Clear</text>
           </view>
         </view>
         <scroll-view class="card_order_list data-v-57280228" scroll-y="true" scroll-top="40rpx">
