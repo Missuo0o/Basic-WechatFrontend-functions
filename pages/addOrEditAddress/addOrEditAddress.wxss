@@ -108,7 +108,7 @@
   margin-right: 10rpx;
 }
 .add_edit .form_address .form_item .tag_text.data-v-174d7646 {
-  width: 68rpx;
+  width: 150rpx;
   height: 44rpx;
   line-height: 40rpx;
   border: 1px solid #e5e4e4;

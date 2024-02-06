@@ -1,5 +1,5 @@
 <view class="data-v-0be17cc6">
-  <uni-nav-bar vue-id="704e9d00-1" left-icon="back" leftIcon="arrowleft" title="地址管理" statusBar="true" fixed="true" color="#ffffff" backgroundColor="#ffc200" data-event-opts="{{[['^clickLeft',[['goBack']]]]}}" bind:clickLeft="__e" class="data-v-0be17cc6" bind:__l="__l"></uni-nav-bar>
+  <uni-nav-bar vue-id="704e9d00-1" left-icon="back" leftIcon="arrowleft" title="Address Management" statusBar="true" fixed="true" color="#ffffff" backgroundColor="#ffc200" data-event-opts="{{[['^clickLeft',[['goBack']]]]}}" bind:clickLeft="__e" class="data-v-0be17cc6" bind:__l="__l"></uni-nav-bar>
   <view class="my-center data-v-0be17cc6">
     <view class="my_info data-v-0be17cc6">
       <view class="head data-v-0be17cc6">
@@ -20,11 +20,11 @@
     <view class="container data-v-0be17cc6">
       <view class="box address_order data-v-0be17cc6">
         <view data-event-opts="{{[['tap',[['goAddress',['$event']]]]]}}" class="address data-v-0be17cc6" bindtap="__e">
-          <image class="location data-v-0be17cc6" src="../../static/address.png"></image><text class="address_word data-v-0be17cc6">地址管理</text>
+          <image class="location data-v-0be17cc6" src="../../static/address.png"></image><text class="address_word data-v-0be17cc6">Address Management</text>
           <image class="to_right data-v-0be17cc6" src="../../static/toRight.png" mode></image>
         </view>
         <view data-event-opts="{{[['tap',[['goOrder',['$event']]]]]}}" class="order data-v-0be17cc6" bindtap="__e">
-          <image class="location data-v-0be17cc6" src="../../static/order.png"></image><text class="order_word data-v-0be17cc6">历史订单</text>
+          <image class="location data-v-0be17cc6" src="../../static/order.png"></image><text class="order_word data-v-0be17cc6">Historical Orders</text>
           <image class="to_right data-v-0be17cc6" src="../../static/toRight.png" mode></image>
         </view>
       </view>

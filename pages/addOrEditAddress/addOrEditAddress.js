@@ -475,29 +475,29 @@
                   showClass: false,
                   items: [{
                       value: "0",
-                      name: "先生"
+                      name: "Man"
                     },
 
                     {
                       value: "1",
-                      name: "女士"
+                      name: "Woman"
                     }
                   ],
 
 
                   current: 0,
                   options: [{
-                      name: "公司",
+                      name: "Company",
                       type: 1
                     },
 
                     {
-                      name: "家",
+                      name: "Home",
                       type: 2
                     },
 
                     {
-                      name: "学校",
+                      name: "School",
                       type: 3
                     }
                   ],
@@ -511,12 +511,7 @@
                     type: 1,
                     // radio: 0,
                     sex: "0",
-                    provinceCode: "11",
-                    provinceName: "",
-                    cityCode: "1101",
-                    cityName: "",
-                    districtCode: "110102",
-                    districtName: "",
+
                     detail: ""
                   },
 
@@ -580,9 +575,9 @@
                   }).then(function (res) {
                     if (res.code === 1) {
                       _this.form = {
-                        provinceCode: res.data.provinceCode,
-                        cityCode: res.data.cityCode,
-                        districtCode: res.data.districtCode,
+
+
+
                         phone: res.data.phone,
                         name: res.data.consignee,
                         sex: res.data.sex,
@@ -591,17 +586,16 @@
                         id: res.data.id
                       };
 
-                      if (
-                        res.data.provinceName &&
-                        res.data.cityName &&
-                        res.data.districtName) {
-                        _this.address =
-                          res.data.provinceName +
-                          "/" +
-                          res.data.cityName +
-                          "/" +
-                          res.data.districtName;
-                      }
+                      // if (
+                  
+                      //   res.data.cityName &&
+                      //   res.data.stateName) {
+                      //   _this.address =
+                       
+                      //     res.data.cityName +
+                      //     "/" +
+                      //     res.data.stateName;
+                      // }
                     }
                   });
                 },
@@ -614,10 +608,6 @@
                   uni.hideKeyboard();
                 },
                 onConfirm: function onConfirm(e) {
-                  this.form.provinceCode = e.provinceCode;
-                  this.form.cityCode = e.cityCode;
-                  this.form.districtCode = e.areaCode;
-                  // 把选择的地址回显到input框中
                   this.address = e.label;
                 },
                 bindTextAreaBlur: function bindTextAreaBlur(e) {
@@ -637,35 +627,30 @@
                 addAddressFun: function addAddressFun() {
                   if (this.form.name === "") {
                     return uni.showToast({
-                      title: "联系人不能为空",
+                      title: "Consignee cannot be empty",
                       duration: 1000,
                       icon: "none"
                     });
 
                   } else if (this.form.phone === "") {
                     return uni.showToast({
-                      title: "手机号不能为空",
+                      title: "Phone number cannot be empty",
                       duration: 1000,
                       icon: "none"
                     });
 
                   } else if (this.form.type === "") {
                     return uni.showToast({
-                      title: "所属标签不能为空",
+                      title: "The label cannot be empty",
                       duration: 1000,
                       icon: "none"
                     });
 
-                  } else if (this.address === "") {
-                    return uni.showToast({
-                      title: "所在地区不能为空",
-                      duration: 1000,
-                      icon: "none"
-                    });
+                  } 
 
-                  } else if (this.form.detail === "") {
+                 else if (this.form.detail === "") {
                     return uni.showToast({
-                      title: "详细地址不能为空不能为空",
+                      title: "Address cannot be empty",
                       duration: 1000,
                       icon: "none"
                     });
@@ -673,36 +658,22 @@
                   }
 
                   if (this.form.phone) {
-                    var reg =
-                      /^(13[0-9]|14[01456879]|15[0-35-9]|16[2567]|17[0-8]|18[0-9]|19[0-35-9])\d{8}$/;
-                    if (!reg.test(this.form.phone)) {
+                   
+                    if (!/^\d{10}$/.test(this.form.phone)) {
                       return uni.showToast({
-                        title: "手机号输入有误",
+                        title: "Please enter the correct phone number!",
                         duration: 1000,
                         icon: "none"
                       });
 
                     }
                   }
-                  if (this.form.name) {
-                    var _reg = /^[\u0391-\uFFE5A-Za-z0-9]{2,12}$/;
-                    if (!_reg.test(this.form.name)) {
-                      return uni.showToast({
-                        title: "请输入合法的2-12个字符",
-                        duration: 1000,
-                        icon: "none"
-                      });
-
-                    }
-                  }
+                
                   var params = _objectSpread(_objectSpread({},
                     this.form), {}, {
                     // sex: this.form.radio,
                     label: this.form.type,
                     consignee: this.form.name,
-                    provinceName: this.address.split("/")[0],
-                    cityName: this.address.split("/")[1],
-                    districtName: this.address.split("/")[2]
                   });
 
                   // 编辑
@@ -747,9 +718,7 @@
                       _this2.form.address = "";
                       _this2.form.type = 1;
                       _this2.form.radio = 0;
-                      _this2.form.provinceCode = "11";
-                      _this2.form.cityCode = "1101";
-                      _this2.form.districtCode = "110102";
+
                     }
                   });
                 },

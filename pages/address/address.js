@@ -278,13 +278,13 @@ var _reachBottom = _interopRequireDefault(__webpack_require__(/*! @/components/r
     getLableVal: function getLableVal(item) {
       switch (item) {
         case '1':
-          return '公司';
+          return 'Company';
         case '2':
-          return '家';
+          return 'Home';
         case '3':
-          return '学校';
+          return 'School';
         default:
-          return '其他';}
+          return 'Other';}
 
     },
     getAddressList: function getAddressList() {var _this = this;
@@ -340,7 +340,7 @@ var _reachBottom = _interopRequireDefault(__webpack_require__(/*! @/components/r
       (0, _api.putAddressBookDefault)({ id: item.id }).then(function (res) {
         if (res.code === 1) {
           uni.showToast({
-            title: '默认地址设置成功',
+            title: 'Default address set successfully',
             duration: 2000,
             icon: 'none' });
 

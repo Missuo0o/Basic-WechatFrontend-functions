@@ -110,6 +110,7 @@
   line-height: 40rpx;
 }
 .address .address_content .address_liests .list_item_top .item_left .details .address_word.data-v-db675620 {
+  margin-left: 20px;
   flex: 1;
   font-size: 28rpx;
   font-family: PingFangSC, PingFangSC-Regular;
