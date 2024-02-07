@@ -34,7 +34,7 @@
       </block>
       <view class="box order_list_cont data-v-54d3589c">
         <view class="order_list data-v-54d3589c">
-          <view class="word_text data-v-54d3589c"><text class="word_style data-v-54d3589c">苍穹餐厅</text></view>
+          <view class="word_text data-v-54d3589c"><text class="word_style data-v-54d3589c">Missuo</text></view>
           <view class="order-type data-v-54d3589c">
             <block wx:for="{{$root.l0}}" wx:for-item="obj" wx:for-index="index" wx:key="index">
               <view class="type_item data-v-54d3589c">
@@ -58,26 +58,26 @@
               </block>
             </view>
             <view class="orderList data-v-54d3589c">
-              <view class="orderInfo data-v-54d3589c"><text class="text data-v-54d3589c">打包费</text><text class="may data-v-54d3589c">￥</text>{{''+orderDetailsData.packAmount+''}}</view>
-              <view class="orderInfo data-v-54d3589c"><text class="text data-v-54d3589c">配送费</text><text class="may data-v-54d3589c">￥</text>6</view>
-              <view class="totalMoney data-v-54d3589c">合计<text class="text data-v-54d3589c"><text class="data-v-54d3589c">￥</text>{{''+orderDetailsData.amount+''}}</text></view>
+              <view class="orderInfo data-v-54d3589c"><text class="text data-v-54d3589c">Packing fee</text><text class="may data-v-54d3589c">￥</text>{{''+orderDetailsData.packAmount+''}}</view>
+              <view class="orderInfo data-v-54d3589c"><text class="text data-v-54d3589c">Delivery fee</text><text class="may data-v-54d3589c">￥</text>6</view>
+              <view class="totalMoney data-v-54d3589c">Total<text class="text data-v-54d3589c"><text class="data-v-54d3589c">￥</text>{{''+orderDetailsData.amount+''}}</text></view>
             </view>
           </view>
         </view>
       </view>
       <view class="box contactMerchant data-v-54d3589c">
         <view data-event-opts="{{[['tap',[['handlePhone',['bottom']]]]]}}" bindtap="__e" class="data-v-54d3589c">
-          <view class="phoneIcon data-v-54d3589c"></view>联系商家
+          <view class="phoneIcon data-v-54d3589c"></view>Contact Merchant
         </view>
       </view>
       <view class="box data-v-54d3589c">
         <view class="orderBaseInfo data-v-54d3589c">
           <view class="data-v-54d3589c">
-            <view class="data-v-54d3589c">期望时间</view>
-            <view class="data-v-54d3589c">{{orderDetailsData.deliveryStatus===1?'立即送出':orderDetailsData.estimatedDeliveryTime}}</view>
+            <view class="data-v-54d3589c">Expected time</view>
+            <view class="data-v-54d3589c">{{orderDetailsData.deliveryStatus===1?'Send Now':orderDetailsData.estimatedDeliveryTime}}</view>
           </view>
           <view class="data-v-54d3589c">
-            <view class="data-v-54d3589c">配送地址</view>
+            <view class="data-v-54d3589c">Delivery address</view>
             <view class="data-v-54d3589c">
               <view class="nameInfo data-v-54d3589c"><text class="data-v-54d3589c">{{orderDetailsData.consignee}}</text>{{''+orderDetailsData.phone+''}}</view>
               <view class="data-v-54d3589c">{{orderDetailsData.address}}</view>
@@ -88,19 +88,19 @@
       <view class="box data-v-54d3589c">
         <view class="orderBaseInfo data-v-54d3589c">
           <view class="data-v-54d3589c">
-            <view class="data-v-54d3589c">订单号码</view>
+            <view class="data-v-54d3589c">Order number</view>
             <view class="data-v-54d3589c">{{orderDetailsData.number}}</view>
           </view>
           <view class="data-v-54d3589c">
-            <view class="data-v-54d3589c">订单时间</view>
+            <view class="data-v-54d3589c">Order Time</view>
             <view class="data-v-54d3589c">{{orderDetailsData.orderTime}}</view>
           </view>
           <view class="data-v-54d3589c">
-            <view class="data-v-54d3589c">支付方式</view>
-            <view class="data-v-54d3589c">{{orderDetailsData.payMethod===1?'微信':'支付宝'}}</view>
+            <view class="data-v-54d3589c">Payment Method</view>
+            <view class="data-v-54d3589c">{{orderDetailsData.payMethod===1?'WeChat':'Alipay'}}</view>
           </view>
           <view class="data-v-54d3589c">
-            <view class="data-v-54d3589c">餐具数量</view>
+            <view class="data-v-54d3589c">Number of tableware</view>
             <view class="data-v-54d3589c">{{orderDetailsData.tablewareStatus===1?orderDetailsData.tablewareNumber:orderDetailsData.tablewareNumber}}</view>
           </view>
         </view>

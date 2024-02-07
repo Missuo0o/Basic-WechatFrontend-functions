@@ -102,7 +102,7 @@
           <image class="order_number_icon data-v-57280228" src="../../static/btn_waiter_nor.png" mode></image>
         </view>
         <view class="order_price data-v-57280228"><text class="ico data-v-57280228">￥</text>0</view>
-        <view class="ord<strong></strong>er_but data-v-57280228">去结算</view>
+        <view class="ord<strong></strong>er_but data-v-57280228">Go to checkout</view>
       </view>
     </block>
     <block wx:else>
@@ -114,7 +114,7 @@
           </view>
           <view class="order_price data-v-57280228"><text class="ico data-v-57280228">￥</text>{{''+$root.g1+''}}</view>
         </view>
-        <view data-event-opts="{{[['tap',[['goOrder']]]]}}" class="order_but data-v-57280228" bindtap="__e">去结算</view>
+        <view data-event-opts="{{[['tap',[['goOrder']]]]}}" class="order_but data-v-57280228" bindtap="__e">Go to checkout</view>
       </view>
     </block>
     <view hidden="{{!(openMoreNormPop)}}" class="pop_mask  data-v-57280228">

@@ -4,14 +4,14 @@
       <view class="orderPay data-v-32f2f1fc">
         <view class="data-v-32f2f1fc">
           <block wx:if="{{timeout}}">
-            <view class="data-v-32f2f1fc">订单已超时</view>
+            <view class="data-v-32f2f1fc">Order has timed out</view>
           </block>
           <block wx:else>
-            <view class="data-v-32f2f1fc">支付剩余时间<text class="data-v-32f2f1fc">{{rocallTime}}</text></view>
+            <view class="data-v-32f2f1fc">Pay remaining time<text class="data-v-32f2f1fc">{{rocallTime}}</text></view>
           </block>
         </view>
         <view class="money data-v-32f2f1fc">￥<text class="data-v-32f2f1fc">{{orderDataInfo.orderAmount}}</text></view>
-        <view class="data-v-32f2f1fc">{{"苍穹餐厅-"+orderDataInfo.orderNumber}}</view>
+        <view class="data-v-32f2f1fc">{{"Missuo-"+orderDataInfo.orderNumber}}</view>
       </view>
     </view>
     <view class="box payBox data-v-32f2f1fc">
@@ -34,6 +34,6 @@
         </view>
       </view>
     </view>
-    <view class="bottomBox btnBox data-v-32f2f1fc"><button class="add_btn data-v-32f2f1fc" type="primary" plain="true" data-event-opts="{{[['tap',[['handleSave',['$event']]]]]}}" bindtap="__e">确认支付</button></view>
+    <view class="bottomBox btnBox data-v-32f2f1fc"><button class="add_btn data-v-32f2f1fc" type="primary" plain="true" data-event-opts="{{[['tap',[['handleSave',['$event']]]]]}}" bindtap="__e">Confirm Payment</button></view>
   </view>
 </view>

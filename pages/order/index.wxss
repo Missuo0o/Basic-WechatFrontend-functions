@@ -699,7 +699,7 @@
 }
 
 .order_content .uniInfo .temarkText.data-v-0ca91b30 {
-  width: 520rpx;
+  width: 200rpx;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

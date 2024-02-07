@@ -189,7 +189,7 @@ var _api = __webpack_require__(/*! @/pages/api/api.js */ 24);function ownKeys(ob
       orderId: null,
       orderDataInfo: {},
       activeRadio: 0,
-      payMethodList: ['微信支付'],
+      payMethodList: ['WeChat Payment'],
       times: null };
 
   },

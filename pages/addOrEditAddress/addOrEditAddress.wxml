@@ -23,7 +23,7 @@
         <uni-easyinput bind:input="__e" class="uni-input data-v-174d7646" vue-id="5b3c5900-3" type="number" placeholder-class="uni-place" maxlength="10" value="{{form.phone}}" data-event-opts="{{[['^input',[['__set_model',['$0','phone','$event',[]],['form']]]]]}}" bind:__l="__l"></uni-easyinput>
       </view>
       <view class="uni-form-item uni-column form_item pad data-v-174d7646">
-        <view class="title data-v-174d7646">Shipping address:</view>
+        <view class="title data-v-174d7646" >Shipping address:</view>
         <view class="update-input data-v-174d7646">
           <view data-event-opts="{{[['tap',[['openAddres',['$event']]]]]}}" class="update-adress data-v-174d7646" bindtap="__e">
             <block wx:if="{{showInput}}"></block><text class="addressIcon data-v-174d7646"><text class="{{['icon','data-v-174d7646',showClass?'iconOn':'']}}"></text></text>
