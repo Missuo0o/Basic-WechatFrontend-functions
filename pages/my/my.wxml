@@ -54,8 +54,8 @@
                   <view class="data-v-0be17cc6"><text class="data-v-0be17cc6">{{"共"+item.m1.count+"件"}}</text></view>
                 </view>
               </view>
-              <view class="againBtn data-v-0be17cc6"><button class="new_btn data-v-0be17cc6" type="default" data-event-opts="{{[['tap',[['oneOrderFun',['$0'],[[['recentOrdersList','',index,'id']]]]]]]}}" bindtap="__e">再来一单</button>
-                <block wx:if="{{item.m2}}"><button class="new_btn btn data-v-0be17cc6" type="default" data-event-opts="{{[['tap',[['goDetail',['$0'],[[['recentOrdersList','',index,'id']]]]]]]}}" bindtap="__e">去支付</button></block>
+              <view class="againBtn data-v-0be17cc6"><button class="new_btn data-v-0be17cc6" type="default" data-event-opts="{{[['tap',[['oneOrderFun',['$0'],[[['recentOrdersList','',index,'id']]]]]]]}}" bindtap="__e">OneMore</button>
+                <block wx:if="{{item.m2}}"><button class="new_btn btn data-v-0be17cc6" type="default" data-event-opts="{{[['tap',[['goDetail',['$0'],[[['recentOrdersList','',index,'id']]]]]]]}}" bindtap="__e">Pay</button></block>
               </view>
             </view>
           </block>

@@ -1,6 +1,6 @@
 {
   "navigationStyle": "custom",
-  "navigationBarTitleText": "订单详情",
+  "navigationBarTitleText": "Order Details",
   "enablePullDownRefresh": false,
   "navigationBarBackgroundColor": "#333333",
   "usingComponents": {

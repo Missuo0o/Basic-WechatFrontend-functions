@@ -1,5 +1,5 @@
 <view class="data-v-0ca91b30">
-  <uni-nav-bar vue-id="3bc35b9e-1" left-icon="back" leftIcon="arrowleft" title="提交订单" statusBar="true" fixed="true" color="#ffffff" backgroundColor="#333333" data-event-opts="{{[['^clickLeft',[['goBack']]]]}}" bind:clickLeft="__e" class="data-v-0ca91b30" bind:__l="__l"></uni-nav-bar>
+  <uni-nav-bar vue-id="3bc35b9e-1" left-icon="back" leftIcon="arrowleft" title="Submit Order" statusBar="true" fixed="true" color="#ffffff" backgroundColor="#333333" data-event-opts="{{[['^clickLeft',[['goBack']]]]}}" bind:clickLeft="__e" class="data-v-0ca91b30" bind:__l="__l"></uni-nav-bar>
   <view data-event-opts="{{[['touchstart',[['touchstart',['$event']]]]]}}" class="order_content data-v-0ca91b30" bindtouchstart="__e">
     <view class="order_content_box data-v-0ca91b30">
       <view class="new_address data-v-0ca91b30">
@@ -22,7 +22,7 @@
         </view>
         <view class="bottom data-v-0ca91b30">
           <view data-event-opts="{{[['tap',[['openTimePopuo',['bottom']]]]]}}" class="bottomTime _div data-v-0ca91b30" bindtap="__e"><text class="time_name_disabled data-v-0ca91b30">Send Now</text>
-            <view class="address_image data-v-0ca91b30"><text class="data-v-0ca91b30">{{arrivalTime+" arrived"}}</text>
+            <view class="address_image data-v-0ca91b30"><text class="data-v-0ca91b30">{{arrivalTime}}</text>
               <view class="to_right data-v-0ca91b30"></view>
             </view>
           </view>
@@ -146,10 +146,10 @@
       <view class="order_price data-v-0ca91b30"><text class="ico data-v-0ca91b30">￥</text>{{''+$root.g2+''}}</view>
       <view class="order_but data-v-0ca91b30">
         <block wx:if="{{isHandlePy}}">
-          <view class="order_but_rit data-v-0ca91b30">去支付</view>
+          <view class="order_but_rit data-v-0ca91b30">Pay</view>
         </block>
         <block wx:else>
-          <view data-event-opts="{{[['tap',[['payOrderHandle']]]]}}" class="order_but_rit data-v-0ca91b30" bindtap="__e">去支付</view>
+          <view data-event-opts="{{[['tap',[['payOrderHandle']]]]}}" class="order_but_rit data-v-0ca91b30" bindtap="__e">Pay</view>
         </block>
       </view>
     </view>

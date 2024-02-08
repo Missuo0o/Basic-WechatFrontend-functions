@@ -1,6 +1,6 @@
 {
   "navigationStyle": "custom",
-  "navigationBarTitleText": "提交订单",
+  "navigationBarTitleText": "Submit Order",
   "enablePullDownRefresh": false,
   "navigationBarBackgroundColor": "#333333",
   "usingComponents": {

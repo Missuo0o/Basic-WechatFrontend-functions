@@ -289,7 +289,7 @@ var _reachBottom = _interopRequireDefault(__webpack_require__(/*! @/components/r
     },
     getAddressList: function getAddressList() {var _this = this;
       this.testValue = false;
-      uni.showLoading({ title: '加载中', mask: true });
+      uni.showLoading({ title: 'Loading', mask: true });
       (0, _api.queryAddressBookList)().then(function (res) {
         if (res.code === 1) {
           setTimeout(function () {uni.hideLoading();}, 100);

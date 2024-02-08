@@ -419,7 +419,7 @@ var _index = __webpack_require__(/*! @/utils/index.js */ 29);function _interopRe
     },
 
     lower: function lower() {
-      this.loadingText = '数据加载中...';
+      this.loadingText = 'Loading';
       this.loading = true;
       this.dataAdd();
 

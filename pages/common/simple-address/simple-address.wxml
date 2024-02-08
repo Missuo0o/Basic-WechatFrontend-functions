@@ -5,8 +5,8 @@
     </block>
     <view class="{{['simple-address-content','simple-address--fixed','data-v-6d425f7a',type,ani+'-content',animation?'content-ani':'']}}">
       <view class="simple-address__header data-v-6d425f7a">
-        <view data-event-opts="{{[['tap',[['pickerCancel',['$event']]]]]}}" class="simple-address__header-btn-box data-v-6d425f7a" bindtap="__e"><text class="simple-address__header-text data-v-6d425f7a">取消</text></view>
-        <view data-event-opts="{{[['tap',[['pickerConfirm',['$event']]]]]}}" class="simple-address__header-btn-box data-v-6d425f7a" bindtap="__e"><text class="simple-address__header-text data-v-6d425f7a" style="{{'color:'+(themeColor)+';'}}">确定</text></view>
+        <view data-event-opts="{{[['tap',[['pickerCancel',['$event']]]]]}}" class="simple-address__header-btn-box data-v-6d425f7a" bindtap="__e"><text class="simple-address__header-text data-v-6d425f7a">Cancel</text></view>
+        <view data-event-opts="{{[['tap',[['pickerConfirm',['$event']]]]]}}" class="simple-address__header-btn-box data-v-6d425f7a" bindtap="__e"><text class="simple-address__header-text data-v-6d425f7a" style="{{'color:'+(themeColor)+';'}}">Confirm</text></view>
       </view>
       <view class="simple-address__box data-v-6d425f7a">
         <picker-view class="simple-address-view data-v-6d425f7a" indicator-style="height: 70rpx;" value="{{pickerValue}}" data-event-opts="{{[['change',[['pickerChange',['$event']]]]]}}" bindchange="__e">

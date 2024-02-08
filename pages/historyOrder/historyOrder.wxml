@@ -31,11 +31,11 @@
                     </view>
                     <view class="numAndAum data-v-5cf07246">
                       <view class="data-v-5cf07246"><text class="data-v-5cf07246">{{"￥"+item.g0}}</text></view>
-                      <view class="data-v-5cf07246"><text class="data-v-5cf07246">{{"共"+item.m2.count+"件"}}</text></view>
+                      <view class="data-v-5cf07246"><text class="data-v-5cf07246">{{"Total "+item.m2.count+" item"}}</text></view>
                     </view>
                   </view>
-                  <view class="againBtn data-v-5cf07246"><button class="new_btn data-v-5cf07246" type="default" data-event-opts="{{[['tap',[['oneMoreOrder',['$0'],[[['recentOrdersList','',index,'id']]]]]]]}}" bindtap="__e">再来一单</button>
-                    <block wx:if="{{item.m3}}"><button class="new_btn btn data-v-5cf07246" type="default" data-event-opts="{{[['tap',[['goDetail',['$0'],[[['recentOrdersList','',index,'id']]]]]]]}}" bindtap="__e">去支付</button></block>
+                  <view class="againBtn data-v-5cf07246"><button class="new_btn data-v-5cf07246" type="default" data-event-opts="{{[['tap',[['oneMoreOrder',['$0'],[[['recentOrdersList','',index,'id']]]]]]]}}" bindtap="__e">OneMore</button>
+                    <block wx:if="{{item.m3}}"><button class="new_btn btn data-v-5cf07246" type="default" data-event-opts="{{[['tap',[['goDetail',['$0'],[[['recentOrdersList','',index,'id']]]]]]]}}" bindtap="__e">Pay</button></block>
                     <block wx:if="{{item.$orig.status===2}}"><button class="new_btn btn data-v-5cf07246" type="default" data-event-opts="{{[['tap',[['handleReminder',['center','$0'],[[['recentOrdersList','',index,'id']]]]]]]}}" bindtap="__e">催单</button></block>
                   </view>
                 </view>

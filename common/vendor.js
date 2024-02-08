@@ -5820,7 +5820,7 @@
           value: true
         });
         exports.default = void 0; /* eslint-disable */
-    
+
         /***/
       }),
 
@@ -5838,7 +5838,7 @@
           value: true
         });
         exports.default = void 0; /* eslint-disable */
-  
+
         /***/
       }),
 
@@ -5856,7 +5856,7 @@
           value: true
         });
         exports.default = void 0; /* eslint-disable */
-  
+
         /***/
       }),
 
@@ -8235,21 +8235,21 @@
           exports.getLableVal = getLableVal;
           var statusWord = function statusWord(status, time) {
             if (status === 1 && time > 0) {
-              return '待付款';
+              return 'Pending payment';
             } else if (status === 6 || time < 0 && status === 1) {
-              return '已取消';
+              return 'Cancelled';
             }
             switch (status) {
               case 2:
-                return '待接单';
+                return 'Waiting for orders';
               case 3:
-                return '待派送';
+                return 'Awaiting delivery';
               case 4:
-                return '派送中';
+                return 'Delivering';
               case 5:
-                return '已完成';
+                return 'Completed';
               case 7:
-                return '已退款';
+                return 'Refunded';
             }
 
           };
@@ -8344,7 +8344,6 @@
             //秒 getSeconds()：(0 ~ 59)
             var second = date.getSeconds();
             var time = +year + '-' + addZero(month) + '-' + addZero(day) + ' ' + addZero(hour) + ':' + addZero(minute) + ':' + addZero(second);
-            debugger;
             return time;
           };
           exports.presentFormat = presentFormat;
@@ -9256,7 +9255,7 @@
 
                 expirationTime: '',
                 // rocallTime:'',
-                tablewareData: 'None',
+                tablewareData: 'No cutlery required',
                 tableware: '',
                 packAmount: 0,
                 value: [0, 0],
@@ -9409,7 +9408,9 @@
                 var minutes = date.getMinutes();
                 if (hours < 10) hours = '0' + hours;
                 if (minutes < 10) minutes = '0' + minutes;
-                this.arrivalTime = hours + ':' + minutes;
+                // this.arrivalTime = "hours + ':' + minutes;"
+                this.arrivalTime = "Deliver immediately"
+
                 this.setArrivalTime(this.arrivalTime);
               },
               // 处理时间数据，超时的数据隐藏
@@ -9537,7 +9538,8 @@
                   this.orderDishNumber), _defineProperty(_params, "amount",
                   this.orderDishPrice), _params);
 
-                console.log(this.arrivalTime, params);
+                console.log(this.popright+"1221313212231213");
+          
 
                 (0, _api.submitOrderSubmit)(params).then(function (res) {
                   if (res.code === 1) {
@@ -9569,7 +9571,7 @@
                 console.log(this.$refs);
                 this.showConfirm = false;
                 this.openPopuos(type);
-                this.textTip = '请联系商家进行取消！';
+                this.textTip = 'Please contact the merchant!';
               },
               // 联系商家进行退款弹层
               handleRefund: function handleRefund(type) {
@@ -9624,12 +9626,12 @@
                     this.num = 0;
                     this.status = 0;
                   }
-                  if (this.tableware === 'Arrcording to meal') {
+                  if (this.tableware === 'According to meal') {
                     this.num = this.orderDishNumber;
                     this.status = 1;
                   }
 
-                  if (this.tableware !== 'Arrcording to meal' || this.tableware !== 'No cutlery required') {
+                  if (this.tableware !== 'According to meal' || this.tableware !== 'No cutlery required') {
                     this.tablewareData = this.tableware;
                   } else {
                     this.tablewareData = this.tableware;
@@ -9641,7 +9643,7 @@
                   // 	// console.log(cont,'ceshi',this.activeRadio)
                   this.tablewareData = cont;
                   // 	// this.$emit('changeCont',cont )
-                  if (this.activeRadio === 'Arrcording to meal') {
+                  if (this.activeRadio === 'According to meal') {
                     // this.tablewareData = this.activeRadio
                     this.num = this.orderDishNumber;
                     this.status = 1;
@@ -9708,10 +9710,10 @@
               onChangeSwiperTab: function onChangeSwiperTab(e) {
                 this.dateChange(e.detail.current);
               },
-              // // 拨打电话弹层
-              // handlePhone(type) {
-              // 	this.$refs.phone.open(type)
-              // },
+              // 拨打电话弹层
+              handlePhone(type) {
+              	this.$refs.phone.open(type)
+              },
               // 进入支付页
               goPay: function goPay() {
                 this.setAddressBackUrl('/pages/details/index');
@@ -16337,7 +16339,7 @@
                   if (res.code === 1) {
                     _this3.isPayment = true;
                     _this3.showConfirm = true;
-                    _this3.textTip = '您的订单已取消！';
+                    _this3.textTip = 'Your order has been canceled!';
                     _this3.$refs.commonPopup.open(type);
                     _this3.orderId = obj.id;
                   }
@@ -16350,7 +16352,7 @@
                 } else {
                   this.showConfirm = false;
                   this.$refs.commonPopup.open(type);
-                  this.textTip = '请联系商家进行取消！';
+                  this.textTip = 'Please contact the merchant!';
                 }
               },
               // 再来一单
@@ -16385,17 +16387,17 @@
               statusWord: function statusWord(status) {
                 console.log(this.timeout, status);
                 if (this.timeout && status === 1 || this.orderDetailsData.status === 6) {
-                  return '订单已取消';
+                  return 'Canceled';
                 }
                 switch (status) {
                   case 2:
-                    return '等待商户接单';
+                    return 'Waiting for orders';
                   case 3:
-                    return '商家已接单';
+                    return 'Order received';
                   case 4:
-                    return '订单派送中';
+                    return 'Delivering';
                   case 5:
-                    return '订单已完成';
+                    return 'Completed';
                 }
 
               },
