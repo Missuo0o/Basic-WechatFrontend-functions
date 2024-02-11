@@ -7,9 +7,9 @@
           <view class="tit data-v-54d3589c">{{$root.m0}}</view>
           <block wx:if="{{!timeout&&orderDetailsData.status===1}}">
             <view class="data-v-54d3589c">
-              <view class="tit data-v-54d3589c">等待支付</view>
+              <view class="tit data-v-54d3589c">Waiting for payment</view>
               <view class="time data-v-54d3589c">
-                <view class="timeIcon data-v-54d3589c"></view>等待支付：<text class="data-v-54d3589c">{{rocallTime}}</text><text class="data-v-54d3589c">{{paymentTime}}</text>
+                <view class="timeIcon data-v-54d3589c"></view>Waiting for payment:<text class="data-v-54d3589c">{{rocallTime}}</text><text class="data-v-54d3589c">{{paymentTime}}</text>
               </view>
             </view>
           </block>
@@ -29,7 +29,7 @@
       </block>
       <block wx:if="{{orderDetailsData.status===6&&orderDetailsData.payStatus===2}}">
         <view class="box timeTip data-v-54d3589c">
-          <view class="icon moneyIcon data-v-54d3589c"></view>Your order has been canceld<text class="data-v-54d3589c">Refund successfully</text>。
+          <view class="icon moneyIcon data-v-54d3589c"></view>Your order has been canceld<text class="data-v-54d3589c"> Refund successfully</text>
         </view>
       </block>
       <view class="box order_list_cont data-v-54d3589c">
@@ -52,7 +52,7 @@
             </block>
             <view class="iconUp data-v-54d3589c">
               <block wx:if="{{orderDetailsData.orderDetailList.length>2}}">
-                <view data-event-opts="{{[['tap',[['e0',['$event']]]]]}}" bindtap="__e" class="data-v-54d3589c"><text class="data-v-54d3589c">{{!showDisplay?'展开更多':'点击收起'}}</text>
+                <view data-event-opts="{{[['tap',[['e0',['$event']]]]]}}" bindtap="__e" class="data-v-54d3589c"><text class="data-v-54d3589c">{{!showDisplay?'Expand':'Click'}}</text>
                   <image class="{{['icon_img','data-v-54d3589c',showDisplay?'icon_imgDown':'']}}" src="../../static/toRight.png" mode></image>
                 </view>
               </block>

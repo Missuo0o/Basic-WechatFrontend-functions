@@ -31,7 +31,7 @@
         </view>
       </view>
       <view class="uni-form-item uni-column form_item tag-box data-v-174d7646">
-        <view class="title data-v-174d7646">Label:</view>
+        <view class="title data-v-174d7646 ">Label:</view>
         <block wx:for="{{options}}" wx:for-item="item" wx:for-index="__i0__" wx:key="type"><text data-event-opts="{{[['tap',[['getTextOption',['$0'],[[['options','type',item.type]]]]]]]}}" class="{{['tag_text','data-v-174d7646',(form.type===item.type)?'active':'']}}" bindtap="__e">{{item.name}}</text></block>
       </view>
     </form>

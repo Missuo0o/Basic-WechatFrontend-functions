@@ -36,7 +36,7 @@
                   </view>
                   <view class="againBtn data-v-5cf07246"><button class="new_btn data-v-5cf07246" type="default" data-event-opts="{{[['tap',[['oneMoreOrder',['$0'],[[['recentOrdersList','',index,'id']]]]]]]}}" bindtap="__e">OneMore</button>
                     <block wx:if="{{item.m3}}"><button class="new_btn btn data-v-5cf07246" type="default" data-event-opts="{{[['tap',[['goDetail',['$0'],[[['recentOrdersList','',index,'id']]]]]]]}}" bindtap="__e">Pay</button></block>
-                    <block wx:if="{{item.$orig.status===2}}"><button class="new_btn btn data-v-5cf07246" type="default" data-event-opts="{{[['tap',[['handleReminder',['center','$0'],[[['recentOrdersList','',index,'id']]]]]]]}}" bindtap="__e">催单</button></block>
+                    <block wx:if="{{item.$orig.status===2}}"><button class="new_btn btn data-v-5cf07246" type="default" data-event-opts="{{[['tap',[['handleReminder',['center','$0'],[[['recentOrdersList','',index,'id']]]]]]]}}" bindtap="__e">Reminder</button></block>
                   </view>
                 </view>
               </block>

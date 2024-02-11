@@ -435,7 +435,7 @@ var _index = __webpack_require__(/*! @/utils/index.js */ 29);function _interopRe
       (0, _api.reminderOrder)(id).then(function (res) {
         if (res.code === 1) {
           _this3.showConfirm = true;
-          _this3.textTip = '您的催单信息已发出！';
+          _this3.textTip = 'Your reminder message has been sent!';
           _this3.$refs.commonPopup.open(type);
           _this3.getList(_this3.status);
         }

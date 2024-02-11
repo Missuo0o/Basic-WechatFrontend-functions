@@ -212,18 +212,25 @@
   padding-left: 76rpx;
 }
 
-.order_content .new_address .top .address_name .address .tag.data-v-0ca91b30 {
+.order_content .new_address .top .address_name .address  {
   position: absolute;
   left: 0;
-  top: 8rpx;
+  top: 8rpx; 
+}
+.tag.data-v-0ca91b30{
+  position: absolute;
+  left: 0;
+  top: 5rpx; 
+  background-color: transparent;
 }
 
 .order_content .new_address .top .address_name .address .word.data-v-0ca91b30 {
   opacity: 1;
-  font-size: 34rpx;
+  font-size: 32rpx;
   font-family: PingFangSC, PingFangSC-Medium;
   font-weight: 550;
   color: #20232a;
+  padding-left: 30rpx;
 }
 
 .order_content .new_address .top .address_name .name.data-v-0ca91b30 {

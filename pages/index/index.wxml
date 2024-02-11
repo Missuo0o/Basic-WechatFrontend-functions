@@ -66,7 +66,7 @@
                 <view data-event-opts="{{[['tap',[['openDetailHandle',['$0'],[[['dishListItems','',index]]]]]]]}}" class="dish_name data-v-57280228" bindtap="__e">{{item.$orig.name}}</view>
                 <view data-event-opts="{{[['tap',[['openDetailHandle',['$0'],[[['dishListItems','',index]]]]]]]}}" class="dish_label data-v-57280228" bindtap="__e">{{item.$orig.description||item.$orig.name}}</view>
                 <view data-event-opts="{{[['tap',[['openDetailHandle',['$0'],[[['dishListItems','',index]]]]]]]}}" class="dish_label data-v-57280228" bindtap="__e">Monthly sales 0</view>
-                <view class="dish_price data-v-57280228"><text class="ico data-v-57280228">￥</text>{{''+item.g0+''}}</view>
+                <view class="dish_pri noce data-v-57280228"><text class="ico data-v-57280228">￥</text>{{''+item.g0+''}}</view>
                 <block wx:if="{{!item.$orig.flavors||item.$orig.flavors.length===0}}">
                   <view class="dish_active data-v-57280228">
                     <block wx:if="{{item.$orig.dishNumber>=1}}">

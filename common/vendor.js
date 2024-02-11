@@ -9408,7 +9408,7 @@
                 var minutes = date.getMinutes();
                 if (hours < 10) hours = '0' + hours;
                 if (minutes < 10) minutes = '0' + minutes;
-                // this.arrivalTime = "hours + ':' + minutes;"
+                // this.arrivalTime = hours + ':' + minutes;
                 this.arrivalTime = "Deliver immediately"
 
                 this.setArrivalTime(this.arrivalTime);
@@ -16326,7 +16326,7 @@
                 (0, _api.reminderOrder)(id).then(function (res) {
                   if (res.code === 1) {
                     _this2.showConfirm = true;
-                    _this2.textTip = '您的催单信息已发出！';
+                    _this2.textTip = 'Your reminder message has been sent!';
                     _this2.$refs.commonPopup.open(type);
                     _this2.orderId = id;
                   }
