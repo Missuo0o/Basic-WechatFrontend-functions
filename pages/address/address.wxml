@@ -8,7 +8,7 @@
             <view data-event-opts="{{[['tap',[['choseAddress',[index,'$0'],[[['addressList','',index]]]]]]]}}" class="list_item_top data-v-db675620" catchtap="__e">
               <view class="item_left data-v-db675620">
                 <view class="details data-v-db675620"><text>{{item.m0}}</text><text class="address_word data-v-db675620">{{item.$orig.detail}}</text></view>
-                <view class="sale data-v-db675620"><text class="name data-v-db675620">{{item.$orig.sex==='0'?item.$orig.consignee+' Man':item.$orig.consignee+' Woman'}}</text><text class="num data-v-db675620">{{item.$orig.phone}}</text></view>
+                <view class="sale data-v-db675620"><text class="name data-v-db675620">{{item.$orig.sex===0?item.$orig.consignee+' Man':item.$orig.consignee+' Woman'}}</text><text class="num data-v-db675620">{{item.$orig.phone}}</text></view>
               </view>
               <view class="item_right data-v-db675620">
                 <image class="edit data-v-db675620" src="../../static/edit.png" data-event-opts="{{[['tap',[['addOrEdit',['编辑','$0'],[[['addressList','',index]]]]]]]}}" catchtap="__e"></image>
