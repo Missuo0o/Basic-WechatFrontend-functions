@@ -116,8 +116,8 @@
         </block>
         <block wx:else>
           <view class="btn data-v-54d3589c">
-            <view data-event-opts="{{[['tap',[['closePopupInfo',['$event']]]]]}}" bindtap="__e" class="data-v-54d3589c">先等等</view>
-            <view data-event-opts="{{[['tap',[['handlePhone',['bottom']]]]]}}" bindtap="__e" class="data-v-54d3589c">拨打电话</view>
+            <view data-event-opts="{{[['tap',[['closePopupInfo',['$event']]]]]}}" bindtap="__e" class="data-v-54d3589c">Wait</view>
+            <view data-event-opts="{{[['tap',[['handlePhone',['bottom']]]]]}}" bindtap="__e" class="data-v-54d3589c">Call</view>
           </view>
         </block>
       </view>
